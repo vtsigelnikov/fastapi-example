@@ -1166,24 +1166,24 @@ files = [
 
 [[package]]
 name = "httpcore"
-version = "0.18.0"
+version = "1.0.5"
 description = "A minimal low-level HTTP client."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "httpcore-0.18.0-py3-none-any.whl", hash = "sha256:adc5398ee0a476567bf87467063ee63584a8bce86078bf748e48754f60202ced"},
-    {file = "httpcore-0.18.0.tar.gz", hash = "sha256:13b5e5cd1dca1a6636a6aaea212b19f4f85cd88c366a2b82304181b769aab3c9"},
+    {file = "httpcore-1.0.5-py3-none-any.whl", hash = "sha256:421f18bac248b25d310f3cacd198d55b8e6125c107797b609ff9b7a6ba7991b5"},
+    {file = "httpcore-1.0.5.tar.gz", hash = "sha256:34a38e2f9291467ee3b44e89dd52615370e152954ba21721378a87b2960f7a61"},
 ]
 
 [package.dependencies]
-anyio = ">=3.0,<5.0"
 certifi = "*"
 h11 = ">=0.13,<0.15"
-sniffio = "==1.*"
 
 [package.extras]
+asyncio = ["anyio (>=4.0,<5.0)"]
 http2 = ["h2 (>=3,<5)"]
 socks = ["socksio (==1.*)"]
+trio = ["trio (>=0.22.0,<0.26.0)"]
 
 [[package]]
 name = "httptools"
@@ -1235,18 +1235,19 @@ test = ["Cython (>=0.29.24,<0.30.0)"]
 
 [[package]]
 name = "httpx"
-version = "0.25.0"
+version = "0.27.0"
 description = "The next generation HTTP client."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "httpx-0.25.0-py3-none-any.whl", hash = "sha256:181ea7f8ba3a82578be86ef4171554dd45fec26a02556a744db029a0a27b7100"},
-    {file = "httpx-0.25.0.tar.gz", hash = "sha256:47ecda285389cb32bb2691cc6e069e3ab0205956f681c5b2ad2325719751d875"},
+    {file = "httpx-0.27.0-py3-none-any.whl", hash = "sha256:71d5465162c13681bff01ad59b2cc68dd838ea1f10e51574bac27103f00c91a5"},
+    {file = "httpx-0.27.0.tar.gz", hash = "sha256:a0cb88a46f32dc874e04ee956e4c2764aba2aa228f650b06788ba6bda2962ab5"},
 ]
 
 [package.dependencies]
+anyio = "*"
 certifi = "*"
-httpcore = ">=0.18.0,<0.19.0"
+httpcore = "==1.*"
 idna = "*"
 sniffio = "*"
 
@@ -3376,13 +3377,13 @@ files = [
 
 [[package]]
 name = "urllib3"
-version = "2.2.1"
+version = "2.2.2"
 description = "HTTP library with thread-safe connection pooling, file post, and more."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "urllib3-2.2.1-py3-none-any.whl", hash = "sha256:450b20ec296a467077128bff42b73080516e71b56ff59a60a02bef2232c4fa9d"},
-    {file = "urllib3-2.2.1.tar.gz", hash = "sha256:d0570876c61ab9e520d776c38acbbb5b05a776d3f9ff98a5c8fd5162a444cf19"},
+    {file = "urllib3-2.2.2-py3-none-any.whl", hash = "sha256:a448b2f64d686155468037e1ace9f2d2199776e17f0a46610480d311f73e3472"},
+    {file = "urllib3-2.2.2.tar.gz", hash = "sha256:dd505485549a7a552833da5e6063639d0d177c04f23bc3864e41e5dc5f612168"},
 ]
 
 [package.extras]
@@ -3585,13 +3586,13 @@ files = [
 
 [[package]]
 name = "weblate"
-version = "5.6.1"
+version = "5.6.2"
 description = "A web-based continuous localization system with tight version control integration"
 optional = false
 python-versions = ">=3.10"
 files = [
-    {file = "Weblate-5.6.1-py3-none-any.whl", hash = "sha256:143aecf495e958e30eb9e968927ad29c263a1d5cb0ad2bcd8a6bc74d40b764da"},
-    {file = "weblate-5.6.1.tar.gz", hash = "sha256:7d96614b17ed89d38305e91773315a736280122af217c001cb7f60bee1a18d34"},
+    {file = "Weblate-5.6.2-py3-none-any.whl", hash = "sha256:07bb163c6cd84f9511f681e0b89f915f6a68fec68fbae9d46f68144212401769"},
+    {file = "weblate-5.6.2.tar.gz", hash = "sha256:a438d37585beca1e2e53806c3d3d8575c2457b3023f3b116f7d40d31233494c6"},
 ]
 
 [package.dependencies]
@@ -3657,7 +3658,7 @@ alibaba = ["aliyun-python-sdk-alimt (>=3.2.0,<4.0.0)"]
 all = ["Weblate[alibaba,amazon,antispam,gerrit,google,ldap,mercurial,openai,postgres,saml,zxcvbn]"]
 amazon = ["boto3 (>=1.28.62,<1.35.0)"]
 antispam = ["python-akismet (>=0.4.2,<0.5)"]
-ci = ["build (==1.2.1)", "coverage (==7.5.4)", "twine (==5.1.0)", "uv (==0.2.13)"]
+ci = ["build (==1.2.1)", "coverage (==7.5.4)", "twine (==5.1.1)", "uv (==0.2.13)"]
 dev = ["PyICU (==2.13.1)", "Weblate[all,ci,lint,mypy,test]", "django-debug-toolbar (==4.4.2)", "reuse (==3.0.2)", "scour (==0.38.2)", "tinyunicodeblock (==1.3)", "tomli"]
 gerrit = ["git-review (>=2.2.0,<2.5.0)"]
 google = ["google-cloud-translate (>=3.8.0,<3.16.0)"]
@@ -3787,4 +3788,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "eb020ef0fe4ac4800e0be7bad5bd58601dee06a524fdabd727d5aa7787b3f626"
+content-hash = "771a207626c01a6519ae286adb312f2dae0f7a74717a6abb501617e79e969eb4"

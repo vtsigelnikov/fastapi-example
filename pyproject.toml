@@ -8,9 +8,9 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.12"
 fastapi = "0.111.0"
-httpx = "0.25"
-urllib3 = "2.2.1"
-Weblate = "5.6.1"
+httpx = "0.27.0"
+urllib3 = "2.2.2"
+Weblate = "5.6.2"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "0.4.0"
