@@ -8,18 +8,15 @@ updates:
     schedule:
       interval: "monthly"
     groups:
-      security-deps:
+      security:
         applies-to: security-updates
-        patterns:
-          - "*"
+        dependency-type: production
       dependencies:
         applies-to: version-updates
         dependency-type: production
         update-types:
           - "minor"
           - "patch"
-        exclude-patterns:
-          - "Weblate*"
       dev-dependencies:
         applies-to: version-updates
         dependency-type: development
