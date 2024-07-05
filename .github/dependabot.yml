@@ -12,15 +12,6 @@ updates:
         applies-to: security-updates
         patterns:
           - "*"
-      dependencies:
-        applies-to: version-updates
-        dependency-type: production
-        update-types:
-          - "minor"
-          - "patch"
-      dev-dependencies:
-        applies-to: version-updates
-        dependency-type: development
     ignore:
       - dependency-name: "pytest-asyncio"
         versions: [ ">=0.22" ]
