@@ -3585,13 +3585,13 @@ files = [
 
 [[package]]
 name = "weblate"
-version = "5.6.1"
+version = "5.6.2"
 description = "A web-based continuous localization system with tight version control integration"
 optional = false
 python-versions = ">=3.10"
 files = [
-    {file = "Weblate-5.6.1-py3-none-any.whl", hash = "sha256:143aecf495e958e30eb9e968927ad29c263a1d5cb0ad2bcd8a6bc74d40b764da"},
-    {file = "weblate-5.6.1.tar.gz", hash = "sha256:7d96614b17ed89d38305e91773315a736280122af217c001cb7f60bee1a18d34"},
+    {file = "Weblate-5.6.2-py3-none-any.whl", hash = "sha256:07bb163c6cd84f9511f681e0b89f915f6a68fec68fbae9d46f68144212401769"},
+    {file = "weblate-5.6.2.tar.gz", hash = "sha256:a438d37585beca1e2e53806c3d3d8575c2457b3023f3b116f7d40d31233494c6"},
 ]
 
 [package.dependencies]
@@ -3657,7 +3657,7 @@ alibaba = ["aliyun-python-sdk-alimt (>=3.2.0,<4.0.0)"]
 all = ["Weblate[alibaba,amazon,antispam,gerrit,google,ldap,mercurial,openai,postgres,saml,zxcvbn]"]
 amazon = ["boto3 (>=1.28.62,<1.35.0)"]
 antispam = ["python-akismet (>=0.4.2,<0.5)"]
-ci = ["build (==1.2.1)", "coverage (==7.5.4)", "twine (==5.1.0)", "uv (==0.2.13)"]
+ci = ["build (==1.2.1)", "coverage (==7.5.4)", "twine (==5.1.1)", "uv (==0.2.13)"]
 dev = ["PyICU (==2.13.1)", "Weblate[all,ci,lint,mypy,test]", "django-debug-toolbar (==4.4.2)", "reuse (==3.0.2)", "scour (==0.38.2)", "tinyunicodeblock (==1.3)", "tomli"]
 gerrit = ["git-review (>=2.2.0,<2.5.0)"]
 google = ["google-cloud-translate (>=3.8.0,<3.16.0)"]
@@ -3787,4 +3787,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "eb020ef0fe4ac4800e0be7bad5bd58601dee06a524fdabd727d5aa7787b3f626"
+content-hash = "a46d4e6f2569d8e12657ee731f1fdccc9536ca03d7e5e3eaa17713715c3d93ad"
