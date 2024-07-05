@@ -8,9 +8,6 @@ updates:
     schedule:
       interval: "monthly"
     groups:
-      security:
-        applies-to: security-updates
-        dependency-type: production
       dependencies:
         applies-to: version-updates
         dependency-type: production
@@ -22,6 +19,10 @@ updates:
       dev-dependencies:
         applies-to: version-updates
         dependency-type: development
+      security-deps:
+        applies-to: security-updates
+        patterns:
+          - "*"
     ignore:
       - dependency-name: "pytest-asyncio"
         versions: [ ">=0.22" ]
