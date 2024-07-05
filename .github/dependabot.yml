@@ -8,10 +8,9 @@ updates:
     schedule:
       interval: "monthly"
     groups:
-      security:
+      security-dependencies:
         applies-to: security-updates
-        patterns:
-          - "*"
+        dependency-type: production
       dependencies:
         applies-to: version-updates
         dependency-type: production
