@@ -10,7 +10,8 @@ updates:
     groups:
       security:
         applies-to: security-updates
-        dependency-type: production
+        patterns:
+          - "*"
       dependencies:
         applies-to: version-updates
         dependency-type: production
