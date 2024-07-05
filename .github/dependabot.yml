@@ -14,15 +14,15 @@ updates:
         update-types:
           - "minor"
           - "patch"
-        exclude-patterns:
-          - "Weblate*"
       dev-dependencies:
         applies-to: version-updates
         dependency-type: development
-      security-deps:
-        applies-to: security-updates
-        patterns:
-          - "*"
     ignore:
       - dependency-name: "pytest-asyncio"
         versions: [ ">=0.22" ]
+  - package-ecosystem: "pip"
+    groups:
+      security:
+        applies-to: security-updates
+        patterns:
+          - "*"
