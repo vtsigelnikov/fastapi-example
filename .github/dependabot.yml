@@ -1,0 +1,26 @@
+# Please see the documentation for all configuration options:
+# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    target-branch: "dev"
+    groups:
+      security:
+        applies-to: security-updates
+        dependency-type: production
+      dependencies:
+        applies-to: version-updates
+        dependency-type: production
+        update-types:
+          - "minor"
+          - "patch"
+      dev-dependencies:
+        applies-to: version-updates
+        dependency-type: development
+    ignore:
+      - dependency-name: "pytest-asyncio"
+        versions: [ ">=0.22" ]
