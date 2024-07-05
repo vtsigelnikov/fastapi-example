@@ -17,7 +17,7 @@ updates:
       dev-dependencies:
         applies-to: version-updates
         dependency-type: development
-      security-dev:
+      security:
         applies-to: security-updates
         patterns:
           - "*"
